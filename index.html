@@ -1,0 +1,229 @@
+<html lang="en">
+    <head>
+        <title>Blog</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="./edit.jpg">
+        <style>
+            h1{
+    font-family:monospace;
+    text-transform:uppercase;
+    text-decoration: plum ;
+    text-align:center; 
+    font-weight:100;
+    font-size:40px;
+    letter-spacing:10px;
+    text-decoration-color: 06d6a0;
+    color: greenyellow;
+    margin: 50px 0;
+
+}
+h2{
+    color: chartreuse;
+    letter-spacing: 2px;
+     margin: 20px 0 20px 15px;
+    border-bottom: 2px solid white ;
+    
+}
+h3{
+    letter-spacing: 1px;
+    margin: 20px 0 20px 15px;
+
+}
+
+p{
+color:white;
+/* padding: 20px; */
+margin: 10px 50px;
+
+
+
+}
+a{
+    color: #C6FFC1;
+    text-decoration: none;
+}
+a.right{
+    color: #0E185F;
+    float: right;
+    font-weight: bold;
+    background-color: #FEFFDE;
+    padding: 3px 5px;
+}
+figure {
+    
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  li{
+      margin: 10px 50px 10px 15px;
+
+
+  }
+  
+  .p.ul{
+      color: white;
+  }
+  body{
+    font-family: 'Noto Sans',sans-serif;
+    
+    background-color: black;
+    font-weight: 100;
+    color: white;
+  }
+        </style>
+    </head>
+    <body >
+        <a class="right"href="#bottom">Go to bottom</a>
+        <b><center><h1 id="top"><b>Data Structures</b></h1></center></b>
+        <div>
+            
+        <p>Data structure is the arrangement of data in memory. They are essential for organizing, processing, retrieving, accessing, and storing data.
+            Data structures usually work together with algorithms.</p><p> They hold the data while algorithms solve problems using the data.
+            Data structures are one of the foundational disciplines in computer science. They are pivotal to programming and a must-know for every programmer. If you've had to apply for a programming job, you will notice data structures take a huge chunk of the interviews.</p>
+            <b><h2>Data Structures and data types</h2></b>
+            <ol><li><h3>Primitive data structures</h3></li><li>
+              <h3>  Non-primitive data structures</h3>
+            </li></ol>
+            <p>Primitive data structures are primitive data types. These data types are defined by the programming language. Strings, integers, floats, and pointers are an example of primitive data structures.
+                Non-primitive data structures are not defined by the programming language. </p><p>They are created by the programmer and are derived from primitive data structures. They are also called 'reference variables' or 'object references' because they reference a memory location that stores data.</p>
+            </div>
+            <div>
+                <b><h2>Arrays</h2></b>
+         <p>Arrays are the most common and basic non-primitive data structures. In some languages like JavaScript, they are called arrays while in others like Python they are called lists. No matter what they are called, they can be identified by their structure and operations.</p><p>
+            Arrays are used to store multiple values in a single variable. They are usually homogenous. Their values are enclosed in square brackets. Each element of an array has an index number, and these elements can be accessed or retrieved using their index number. Array indexes start with 0.      </p>
+            <h3>Advantages of using arrays: </h3>
+            <ul>
+                <li>Arrays allow random access to elements. This makes accessing elements by position faster.</li>
+                <li>Arrays have better cache locality that makes a pretty big difference in performance.</li>
+                <li>Arrays represent multiple data items of the same type using a single name.</li>
+            
+            </ul>
+            <h3>Drawbacks: </h3>
+            <p>You can’t change the size i.e. once you have declared the array you can’t change its size because of static memory allocation. Here Insertion(s) and deletion(s) are difficult as the elements are stored in consecutive memory locations and the shifting operation is costly too.</p>
+
+            <center><figure>
+             <a href="https://www.tutorialsteacher.com/csharp/array-csharp" target="_blank" >  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4UJos_Md-inKH3MZBQHJC2AkK7mZAGHLOw&usqp=CAU" height="150"width="500" alt="Array" ></a>
+                <figcaption>Fig.1 - Array</figcaption>
+              </figure></center>
+            <a href="https://en.wikipedia.org/wiki/Array" target="_blank">Click Here for more info</a>
+        <hr>
+            </div>
+            <div>
+                <b><h2>Linked List</h2></b>
+                
+                <p>Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers.</p><p>
+                    Arrays can be used to store linear data of similar types, but arrays have the following limitations. 
+                    <ol>
+                        <li>The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage. </li>
+                        <li> Inserting a new element in an array of elements is expensive because the room has to be created for the new elements and to create room existing elements have to be shifted but in Linked list if we have the head node then we can traverse to any node through it and insert new node at the required position.</li>
+                    </ol></p>
+                    <h3>Advantages over arrays:</h3>
+            <ul>
+                <li>Dynamic size </li>
+                <li>Ease of insertion/deletion</li>
+            </ul>
+            <h3>Drawbacks: </h3>
+            <ul>
+                <li>Random access is not allowed. We have to access elements sequentially starting from the first node(head node). So we cannot do binary search with linked lists efficiently with its default implementation. </li>
+
+                <li>Extra memory space for a pointer is required with each element of the list. </li>
+                <li> Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.</li>
+            </ul> 
+                    <center><figure>
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png" height="150" width="500" alt="Linked List"></center>
+                        <figcaption>Fig.2 - Linked List</figcaption>
+                      </figure>
+                    <a href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">Click Here for more info</a>
+                <hr>
+                    </div>
+            <div>
+                <div>
+                    <b><h2>Stack</h2></b>
+                    
+                    <p>Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).</p><p>
+                        There are many real-life examples of a stack. Consider the simple example of plates stacked over one another in a canteen. The plate which is at the top is the first one to be removed, i.e. the plate which has been placed at the bottommost position remains in the stack for the longest period of time. So, it can be simply seen to follow the LIFO/FILO order. 
+                        </p>
+                        <h3>Pros: </h3>
+                <ul>
+                    <li>The linked list implementation of a stack can grow and shrink according to the needs at runtime.  </li>
+                
+                </ul>
+                <h3>Cons: </h3>
+                <ul>
+                    <li>Requires extra memory due to involvement of pointers.</li>
+    
+                    
+                </ul> 
+                        <center><figure>
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210716162942/stack-660x345.png" height="150" width="500" alt="stack"></center>
+                            <figcaption>Fig.2 - Hash Table</figcaption>
+                          </figure>
+                        <a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)" target="_blank">Click Here for more info</a>
+                    <hr>
+                        </div>
+                <div>    
+        <b><h2>Hashtables</h2></b>
+        
+        <p>      Hashtables are also called dictionaries, search tables, maps, associative arrays or hash. This structure is non-linear and elements are stored in a key/value pair. The address or index value of the data element is generated from a hash function.</p><p>
+            Hashtables are different from arrays because rather than index elements with positions, it uses a key. This makes it perform faster insertion and search of elements because each element is accessed with its key.</p>
+            <h3>Advantages: </h3>
+                <ul>
+                    <li>Main advantage is synchronization.</li>
+                    <li>In many situations, hash tables turn out to be more efficient than search trees or any other table lookup structure. For this reason, they are widely used in many kinds of computer softwares, particularly for associative arrays, database indexing, caches and sets.</li>
+                </ul>
+                <h3>Disadvantages: </h3>
+                <ul>
+                    <li>Hash collisions are practically unavoidable. when hashing a random subset of a large set</li>
+    
+                    
+                </ul> 
+            <center><figure>
+                <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/hash_function.jpg" height="150" width="500" alt="Hashtables"></center>
+                <figcaption>Fig.2 - Hash Table</figcaption>
+              </figure>
+            <a href="https://en.wikipedia.org/wiki/Hash_table#:~:text=In%20computing%2C%20a%20hash%20table,desired%20value%20can%20be%20found." target="_blank">Click Here for more info</a>
+        <hr>
+            </div>
+            <div>
+        <b><h2 id="bottom">Graph</h2></b>
+        
+        <p>This is a non-linear data structure that has nodes and edges. Nodes are also referred to as vertices and they correspond to objects. Edges are the connections between objects. Graphs are used to show relationships. A graph can also have weight – which indicates the strength between each connection of the node.</p><p>There are two types of graphs – directed and undirected graphs. A directed graph contains an ordered pair of nodes while an undirected graph contains an unordered pair of nodes.</p>
+        <h3>Advantages: </h3>
+                <ul>
+                    <li>Allows easier processing of data.</li>
+                    <li>It allows information stored on disk very efficiently.</li>
+                    <li>These are necessary for designing an efficient algorithm.</li>
+                </ul>
+                <h3>Disadvantages: </h3>
+                <ul>
+                    <li>It is applicable only for advanced users.</li>
+                    <li>If any issue occurs it can be solved only by experts.</li>
+                    <li>Slow access in case of some data types</li>
+
+    
+                    
+                </ul> 
+        <center><figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-gOXeo6PJJCsdXWC9yefg6BS4PfphnxNwA&usqp=CAU.jpg" height="150" width="500" alt="Graph">
+            <figcaption>Fig.3 - graphs</figcaption>
+          </figure></center>
+        <a href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)" target="_blank">Click Here for more info</a><a class="right"href="#top">Go to top</a>
+    </div>
+    </body><div><footer>
+        <br><br>
+        <a style="color: coral "href="tel:+918122667010">contact no.</a>
+        <a style="color: coral"  href="mailto:sms8122667010@gmail.com">email</a>
+        
+        
+    </footer></div>
+    
+</html>
